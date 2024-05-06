@@ -15,8 +15,8 @@ public class Flight extends Mod {
     @Override
     public void onEnable() {
         player.getAbilities().allowFlying = true;
+        mc.player.getAbilities().flying = true;
         super.onEnable();
-
     }
 
 
@@ -24,6 +24,7 @@ public class Flight extends Mod {
     @Override
     public void onDisable() {
         player.getAbilities().allowFlying = false;
+        mc.player.getAbilities().flying = false;
         super.onDisable();
     }
 }
